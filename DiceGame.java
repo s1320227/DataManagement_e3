@@ -18,7 +18,9 @@ public class DiceGame {
     System.out.println("Die 1: " + die1);
     System.out.println("Die 2: " + die2);
     System.out.println("Total value: " + total);
+    WinLoseChecker(total);
   }
+
   
   public void Greeting(){
     Scanner sc = new Scanner(System.in);
@@ -27,4 +29,15 @@ public class DiceGame {
     name = sc.nextLine();
     System.out.println("Hello, " + name + "!");
   }
+
+
+  public void WinLoseChecker(int total){
+    if(total >= 8){
+      System.out.println("You won!!");
+    }else{
+      System.out.println("You lost..");
+    }
+  }
+  
+
 }
