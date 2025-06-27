@@ -1,4 +1,5 @@
 import java.util.Random
+import java.util.Scanner
 
 public class DiceGame {
   private int die1, die2;
@@ -9,9 +10,21 @@ public class DiceGame {
     die1 = rand.nextInt(6) + 1;
     die2 = rand.nextInt(6) + 1;
     int total = die1 + die2;
+    
+    Greeting();
+    
     System.out.println("Rolling dice...");
     System.out.println("Die 1: " + die1);
     System.out.println("Die 2: " + die2);
     System.out.println("Total value: " + total);
+  }
+  
+  public void Greeting(){
+    Scanner sc = new Scanner(System.in);
+    String name;
+    System.out.println("What is your name?");
+    System.out.print("> ");
+    name = sc.nextLine();
+    System.out.println("Hello, " + name + "!");
   }
 }
