@@ -33,9 +33,9 @@ public class DiceGame {
 
   public void WinLoseChecker(int total){
     if(total >= 8){
-      System.out.println("You won!!");
+      System.out.println(name + " won!!");
     }else{
-      System.out.println("You lost..");
+      System.out.println(name + " lost..");
     }
   }
   
